@@ -4,12 +4,10 @@ import org.bukkit.ChatColor;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.AsyncPlayerChatEvent;
-
 import java.util.List;
 
 public class CfEvent implements Listener {
     private final ChatFilter plugin;
-
     public CfEvent(ChatFilter plugin) {
         this.plugin = plugin;
     }
