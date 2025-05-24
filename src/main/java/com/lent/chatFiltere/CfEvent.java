@@ -19,8 +19,9 @@ public class CfEvent implements Listener {
 
         for(String word : bannedWords) {
             if(message.contains(word)) {
+                String warn = "&7[&c!&7] &7Your message wasn't sent because it contains a blacklisted word: &c" + word;
                 e.setCancelled(true);
-                e.getPlayer().sendMessage(ChatColor.GRAY + "[" + ChatColor.RED + "!" + ChatColor.GRAY + "] " + ChatColor.GRAY + "Your message wasnt sent as it contains the blacklisted word(s): " + word);
+                e.getPlayer().sendMessage(ChatColor.translateAlternateColorCodes('&', warn));
             }
         }
     }
