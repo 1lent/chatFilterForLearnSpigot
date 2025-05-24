@@ -18,7 +18,7 @@ public class CfEvent implements Listener {
         List<String> bannedWords = plugin.getConfig().getStringList("banned-words");
 
         for(String word : bannedWords) {
-            if(message.contains(word.toLowerCase())) {
+            if(message.contains(word)) {
                 e.setCancelled(true);
                 e.getPlayer().sendMessage(ChatColor.GRAY + "[" + ChatColor.RED + "!" + ChatColor.GRAY + "] " + ChatColor.GRAY + "Your message wasnt sent as it contains the blacklisted word(s): " + word);
             }
