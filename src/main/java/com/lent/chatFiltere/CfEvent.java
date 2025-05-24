@@ -8,9 +8,9 @@ import org.bukkit.event.player.AsyncPlayerChatEvent;
 import java.util.List;
 
 public class CfEvent implements Listener {
-    private final ChatFiltere plugin;
+    private final ChatFilter plugin;
 
-    public CfEvent(ChatFiltere plugin) {
+    public CfEvent(ChatFilter plugin) {
         this.plugin = plugin;
     }
 
