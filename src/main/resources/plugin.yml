@@ -1,0 +1,4 @@
+name: chatFiltere
+version: '1.0'
+main: com.lent.chatFiltere.ChatFiltere
+api-version: '1.20'
